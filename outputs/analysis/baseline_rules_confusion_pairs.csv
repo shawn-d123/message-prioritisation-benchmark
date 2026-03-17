@@ -1,4 +1,11 @@
 confusion_pair,count
+important_predicted_as_routine,6
+informational_predicted_as_routine,6
+informational_predicted_as_urgent,5
+urgent_predicted_as_routine,5
+routine_predicted_as_important,3
+urgent_predicted_as_important,3
 informational_predicted_as_important,2
-important_predicted_as_routine,2
+important_predicted_as_urgent,2
+urgent_predicted_as_informational,1
 routine_predicted_as_urgent,1

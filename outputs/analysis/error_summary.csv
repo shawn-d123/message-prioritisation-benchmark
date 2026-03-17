@@ -1,4 +1,4 @@
 provider,rows_evaluated,total_error_rows,priority_errors,action_errors,priority_and_action_errors,priority_only_errors,action_only_errors
-baseline_rules,16,10,5,7,2,3,5
-naive_bayes,16,16,11,6,1,10,5
-logistic_regression,16,16,11,6,1,10,5
+baseline_rules,60,41,34,24,17,17,7
+naive_bayes,60,36,27,21,12,15,9
+logistic_regression,60,41,31,22,12,19,10

@@ -1,5 +1,5 @@
 ,urgent,important,routine,informational
-urgent,0,0,0,3
-important,0,0,0,3
-routine,0,0,0,4
-informational,0,0,1,5
+urgent,11,0,2,2
+important,1,10,3,1
+routine,3,4,6,2
+informational,3,4,2,6

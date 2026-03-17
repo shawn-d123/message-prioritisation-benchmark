@@ -1,49 +1,181 @@
 message_id,source,message_text,priority_label,action_required,split
-msg_001,synthetic,The client presentation has been moved to 2pm today — please update your slides before then.,urgent,True,train
-msg_063,adapted_real_world,We've updated the style guide for external communications. The changes are mostly minor formatting tweaks.,informational,False,train
-msg_029,adapted_real_world,Your probation review is scheduled for next Thursday at 10am. Please prepare a short summary of your first three months.,important,True,train
-msg_023,realistic_synthetic,"Hi all, attached is the agenda for Monday's team meeting. Feel free to suggest additions.",routine,True,train
-msg_048,synthetic,Could you double-check that the meeting room bookings for next week don't overlap? There was a conflict last time.,routine,True,train
-msg_005,realistic_synthetic,"Could you review the attached budget proposal when you get a chance? No rush, but ideally before next Wednesday.",important,True,train
-msg_044,synthetic,Please remember to lock your screens when stepping away from your desks.,routine,False,train
-msg_053,adapted_real_world,Friendly reminder to submit your peer feedback forms. They're helpful for the review cycle but not mandatory.,routine,False,train
-msg_012,realistic_synthetic,The heating in Building B will be turned off briefly tomorrow morning for maintenance.,informational,False,train
-msg_039,adapted_real_world,Thanks for sorting the workshop materials — everything looked great on the day.,informational,False,train
-msg_050,adapted_real_world,Please send the signed NDA back to legal today. The partnership agreement cannot proceed without it.,urgent,True,train
-msg_061,synthetic,The landlord has requested a response to the lease amendment by close of play tomorrow.,urgent,True,train
-msg_043,adapted_real_world,Heads up — two of the interview candidates for tomorrow have requested virtual links instead of attending in person.,important,True,train
-msg_042,synthetic,The charity bake sale raised £312 last week. Thanks to everyone who contributed.,informational,False,train
-msg_021,adapted_real_world,Please be aware that the car park will be resurfaced next week. Alternative parking arrangements are detailed below.,informational,True,train
-msg_051,synthetic,The team's shared calendar has been updated with all the April deadlines.,informational,False,train
-msg_032,adapted_real_world,We've been asked to provide an updated risk register to the auditors by Friday morning. Can you check sections 4 and 5?,important,True,train
-msg_054,synthetic,The office plants are being watered on Tuesdays now instead of Mondays.,informational,False,train
-msg_008,synthetic,"Hi, the printer on floor 3 is out of toner again. Could someone log a facilities request?",routine,True,train
-msg_022,synthetic,The server is showing critical memory usage. Can someone from infrastructure take a look as soon as possible?,urgent,True,train
-msg_027,realistic_synthetic,The Wi-Fi password for the guest network has been updated. New credentials are posted in each meeting room.,informational,False,train
-msg_037,synthetic,A water leak has been reported in the ground-floor corridor. Facilities are on their way but please avoid that area.,urgent,True,train
-msg_026,synthetic,Congratulations to the sales team on exceeding their Q3 target by 12%.,informational,False,train
-msg_038,realistic_synthetic,"Hi, the document you sent has tracked changes still visible. Could you accept all changes and resend a clean version?",routine,True,train
-msg_004,synthetic,The new coffee machine has been installed in the second-floor kitchen.,informational,False,train
-msg_033,synthetic,Please ensure your laptop is connected to the network tonight so the security patch can be applied overnight.,routine,True,train
-msg_052,realistic_synthetic,"Hi, a few of the test cases in the staging environment are failing after last night's deployment. Can you investigate before we push to production?",urgent,True,train
-msg_049,realistic_synthetic,Morning — the external consultant cancelled today's 11am session. We're trying to rebook for Thursday.,informational,True,train
-msg_018,adapted_real_world,The board has approved the revised travel policy. You can find the updated version on the intranet.,informational,False,train
-msg_056,synthetic,"Hi, the insurance renewal documents need a second signatory. Could you review and countersign by tomorrow?",urgent,True,train
-msg_030,synthetic,Reminder: all holiday requests for December must be submitted by the end of this month.,routine,True,train
-msg_002,realistic_synthetic,"Hi team, just a reminder that timesheets are due by end of day Friday as usual.",routine,True,train
-msg_025,adapted_real_world,A delivery arrived for your department. It's been left in the loading bay and needs collecting before 4pm.,important,True,train
-msg_046,synthetic,Our energy usage report for Q2 is now available on the sustainability page.,informational,False,train
-msg_034,realistic_synthetic,Just letting you know that the intern cohort starts on the 14th. Onboarding packs have already been prepared.,informational,False,train
-msg_024,synthetic,Would you be able to cover the reception desk between 1 and 2 tomorrow? Sarah is at an appointment.,routine,True,train
-msg_009,realistic_synthetic,Please confirm your attendance for the quarterly review by replying to this email today.,urgent,True,train
-msg_041,realistic_synthetic,"Hi, I noticed the project timeline doesn't account for the bank holiday. Worth adjusting before we share it externally.",important,True,train
-msg_057,adapted_real_world,The recruitment agency has sent through five CVs for the analyst role. I've forwarded them to you for shortlisting.,important,True,train
-msg_062,realistic_synthetic,"Hi, just wanted to flag that the quarterly health and safety walkthrough is due. Could you schedule it in?",important,True,train
-msg_028,synthetic,"Hi, the client just called — they haven't received the proposal we sent on Friday. Can you re-send it now?",urgent,True,train
-msg_017,synthetic,"Hi, would you mind updating the contact list with the new starters' details when you have a moment?",routine,True,train
-msg_060,adapted_real_world,Please note that the staff survey results will be shared in next week's all-hands meeting.,informational,False,train
-msg_011,synthetic,We're trialling a new project management tool next month — more details to follow.,informational,False,train
-msg_036,adapted_real_world,The CEO will be visiting the office next Tuesday. Please keep common areas tidy.,routine,True,train
-msg_010,adapted_real_world,Gentle reminder: your annual compliance training expires in 48 hours. Please complete it to avoid access restrictions.,important,True,train
-msg_040,synthetic,Your building access card will stop working at midnight unless you complete the annual security declaration.,urgent,True,train
-msg_013,synthetic,Could you send over the finalised invoice for the Henderson project? The client's payment terms start from receipt.,important,True,train
+msg_171,realistic_synthetic,The PR disaster just hit Twitter. Marketing needs your approval on the apology statement right now.,urgent,True,train
+msg_196,adapted_real_world,Your feedback on the beta feature is requested. Please fill out the survey when you have a chance.,important,True,train
+msg_223,adapted_real_world,"Just a heads up, I will be working from home tomorrow due to a doctor appointment.",informational,False,train
+msg_176,synthetic,Production deployment failed and corrupted the state. Initiate rollback procedure immediately.,urgent,True,train
+msg_138,adapted_real_world,Your desk move request has been logged and is waiting for scheduling.,routine,False,train
+msg_151,synthetic,"For awareness, the client has delayed their rollout by two weeks.",informational,False,train
+msg_146,adapted_real_world,Just a heads-up that the visitor parking area is partly closed this week.,informational,False,train
+msg_043,synthetic,Parking permit renewal forms are now available on the facilities portal. Complete yours before end of month to keep your allocated space.,routine,True,train
+msg_202,adapted_real_world,Can someone grant me access to the shared marketing drive?,routine,True,train
+msg_217,adapted_real_world,Please check if your profile picture on the intranet is up to date.,routine,True,train
+msg_233,synthetic,The company stock price hit a 52-week high today.,informational,False,train
+msg_143,adapted_real_world,Your password was changed successfully.,informational,False,train
+msg_054,realistic_synthetic,Product roadmap draft for H2 has been shared with the leadership group. Have a read when you get a chance.,important,False,train
+msg_025,synthetic,The VP of operations has requested a callback within the hour regarding the client escalation. Please prioritise this.,urgent,True,train
+msg_086,adapted_real_world,The finance cutoff is at 1 pm and your approval is still missing on the expense batch.,urgent,True,train
+msg_033,realistic_synthetic,Payroll discrepancy identified on three employee records. Finance needs corrections submitted before this afternoon's processing run.,urgent,True,train
+msg_209,synthetic,I need someone to cover my shift next Tuesday morning. Let me know if you can.,routine,True,train
+msg_169,adapted_real_world,Investor call starts in 15 minutes and the presentation link is broken. Fix it please.,urgent,True,train
+msg_198,realistic_synthetic,We are ordering new laptops for the engineering team. Please specify your preferred model in the sheet.,important,True,train
+msg_210,realistic_synthetic,Please sign the digital birthday card for Sarah before we send it out tomorrow.,routine,True,train
+msg_220,adapted_real_world,"Just logging my sick day in the system, I will be offline today.",routine,False,train
+msg_188,synthetic,The legal team has updated our terms of service. Review the changes to ensure your module complies.,important,True,train
+msg_205,adapted_real_world,Could you take a quick look at this pull request when you have a moment?,routine,True,train
+msg_157,synthetic,"The monthly dashboard has been published, please review section three before Friday if it relates to your area.",informational,True,train
+msg_071,adapted_real_world,Room booking confirmed for your Wednesday 2pm session in Meeting Room B. AV equipment will be set up in advance.,routine,False,train
+msg_107,realistic_synthetic,A reminder that your compliance training expires on Friday and must be renewed this week.,important,True,train
+msg_080,adapted_real_world,Please note the updated visitor sign-in procedure at reception. All guests must now show photo ID on arrival.,informational,True,train
+msg_234,realistic_synthetic,The parking lot restriping project is now complete.,informational,False,train
+msg_214,adapted_real_world,Please vote on where we should order lunch from for the team building event.,routine,True,train
+msg_193,adapted_real_world,Please submit your travel expenses from the conference by Friday for end-of-month processing.,important,True,train
+msg_167,synthetic,The payroll file was corrupted and needs to be resubmitted by 1 PM or nobody gets paid tomorrow.,urgent,True,train
+msg_072,realistic_synthetic,End-of-year celebration venue has been confirmed. Save the date: 18 December at The Grand Hall.,informational,False,train
+msg_191,synthetic,Can you approve the budget allocation for the new software licenses? The team is blocked until it is done.,important,True,train
+msg_051,realistic_synthetic,Weekly standup notes from this morning's call have been posted in the usual Teams channel.,routine,False,train
+msg_070,synthetic,Department objectives draft has been shared for alignment. Take a look and let me know if anything feels off.,important,True,train
+msg_003,realistic_synthetic,Reminder to submit your timesheets for this pay period. The payroll cutoff is end of day Thursday.,routine,True,train
+msg_002,synthetic,Quarterly business review deck needs your section by Friday. Please add slides covering your team's Q3 deliverables and Q4 targets.,important,True,train
+msg_067,synthetic,Facilities team asking everyone to clear personal items from the shared kitchen fridge by Friday for the monthly clean.,routine,False,train
+msg_113,realistic_synthetic,The candidate panel notes are due by tomorrow afternoon so recruitment can move forward.,important,True,train
+msg_212,synthetic,Remember to turn off your monitors before leaving for the long weekend.,routine,True,train
+msg_112,adapted_real_world,Please check the draft contract wording and flag any issues before it goes to legal.,important,True,train
+msg_004,synthetic,Just a heads-up that the office will be closed next Monday for the bank holiday. Normal hours resume Tuesday.,informational,False,train
+msg_215,synthetic,"I have updated the meeting agenda, please review and let me know if I missed anything.",routine,True,train
+msg_154,synthetic,A copy of the signed agreement has been stored in the contracts folder.,informational,False,train
+msg_236,synthetic,This is an automated notification that your password will expire in 14 days.,informational,False,train
+msg_012,realistic_synthetic,The company achieved its Q2 revenue target ahead of schedule. Thanks to everyone for the strong quarter.,informational,False,train
+msg_038,adapted_real_world,Training certification renewal is due within the next two weeks. Book a slot through the learning portal to stay compliant.,important,True,train
+msg_065,adapted_real_world,Emergency maintenance window approved for tonight between 11pm and 3am. Services may be briefly unavailable during this period.,urgent,False,train
+msg_073,synthetic,This is a gentle reminder that the signed NDA needs to be returned to legal before we can share the project files. We are waiting on yours.,urgent,True,train
+msg_102,synthetic,Your line manager would like the quarterly summary updated before Thursday's planning meeting.,important,True,train
+msg_170,synthetic,Alert: CPU usage at 100% on core services. Scale up the clusters before we experience an outage.,urgent,True,train
+msg_144,realistic_synthetic,Catering has confirmed the vegetarian option count for the workshop.,informational,False,train
+msg_110,realistic_synthetic,Could you update the project timeline to reflect the scope changes discussed earlier?,important,True,train
+msg_127,realistic_synthetic,Can you send me the dial-in details for tomorrow's regular team sync?,routine,True,train
+msg_197,synthetic,Let's finalize the slide deck for the all-hands meeting. I need your section by COB.,important,True,train
+msg_129,adapted_real_world,"The onboarding checklist is attached, please tick off the remaining items this week.",routine,True,train
+msg_095,adapted_real_world,"The classroom has changed again and students are already arriving, please update the notice board.",urgent,True,train
+msg_029,adapted_real_world,Insurance policy renewal expires at end of day. The broker needs a signed confirmation returned by 4pm to avoid a lapse in coverage.,urgent,True,train
+msg_037,synthetic,Vendor invoice dispute: the supplier is threatening to pause deliveries unless we respond to their query by end of day.,urgent,True,train
+msg_115,adapted_real_world,Would you be able to resubmit the expenses with the missing receipt attached?,important,True,train
+msg_122,synthetic,Can you book a meeting room for our weekly catch-up and send the invite?,routine,True,train
+msg_226,adapted_real_world,A new coffee machine has been installed in the breakroom on the 3rd floor.,informational,False,train
+msg_153,realistic_synthetic,The supplier has acknowledged the complaint and is investigating.,informational,False,train
+msg_020,adapted_real_world,IT systems upgrade completed successfully over the weekend. All services are back online and running as expected.,informational,False,train
+msg_141,realistic_synthetic,The office will close one hour early on Friday due to building maintenance.,informational,False,train
+msg_064,synthetic,Office temperature has been recalibrated following recent complaints. Thermostats are now set to 22 degrees across all floors.,informational,False,train
+msg_044,adapted_real_world,Clocks go forward this weekend. Just a reminder to adjust any manual time-tracking devices.,informational,False,train
+msg_059,adapted_real_world,Please confirm your attendance for the team away day on 28 March. We need final numbers for the venue booking.,routine,True,train
+msg_106,adapted_real_world,We need your approval on the new starter equipment list before HR can proceed.,important,True,train
+msg_026,adapted_real_world,Software licence audit in progress. Please verify and confirm the tools your team is actively using via the shared spreadsheet by next Tuesday.,important,True,train
+msg_136,realistic_synthetic,The monthly newsletter draft is attached for reference before tomorrow's send.,routine,False,train
+msg_213,realistic_synthetic,Can you point me to the documentation for the API authentication?,routine,True,train
+msg_066,realistic_synthetic,Risk assessment template needs to be completed for all active projects. Please submit yours via the governance portal by next Thursday.,important,True,train
+msg_237,realistic_synthetic,The town hall meeting will be broadcast live via the link provided below.,informational,False,train
+msg_173,synthetic,"Main database dropped. Restoring from backup, please pause all batch jobs until further notice.",urgent,True,train
+msg_150,realistic_synthetic,The training webinar recording is available on the intranet.,informational,False,train
+msg_238,adapted_real_world,"The client pushed the launch date back by a week, so we have a bit more breathing room.",informational,False,train
+msg_199,adapted_real_world,Reminder that open enrollment ends next Friday. Make sure you select your benefits.,important,False,train
+msg_100,synthetic,Please confirm within the next two hours whether legal can attend the client call or we will need to postpone.,urgent,True,train
+msg_195,realistic_synthetic,I need a final headcount for the executive retreat. Please confirm if you will be attending.,important,True,train
+msg_076,synthetic,New coffee machine has been installed in the second-floor break room. Quick start guide is posted on the wall beside it.,informational,False,train
+msg_206,synthetic,Please update the contact list with the new hires from this month.,routine,True,train
+msg_010,synthetic,Updated data privacy policy requires acknowledgement from each department head. Please read and confirm via the compliance portal by next Friday.,important,True,train
+msg_045,realistic_synthetic,New hire starts tomorrow morning and their laptop has not been provisioned yet. Can someone from IT set this up as a priority?,urgent,True,train
+msg_229,adapted_real_world,The IT department will be performing routine network upgrades over the weekend. Intermittent downtime is expected.,informational,False,train
+msg_168,realistic_synthetic,All inbound emails are bouncing. Network team needs to restart the exchange server.,urgent,True,train
+msg_126,adapted_real_world,"When you are back at your desk, please move the completed files into the shared archive folder.",routine,True,train
+msg_186,realistic_synthetic,Please update your project status in the tracker before the leadership sync tomorrow morning.,important,True,train
+msg_181,adapted_real_world,Please review the attached Q3 financial report by end of day Wednesday so we can finalize the deck.,important,True,train
+msg_130,realistic_synthetic,Could you add the latest ticket numbers to the tracker before stand-up?,routine,True,train
+msg_207,realistic_synthetic,Do not forget to submit your weekly timesheet by Friday afternoon.,routine,True,train
+msg_158,adapted_real_world,"For planning purposes, send any dietary requirements for the away day by next Tuesday.",informational,True,train
+msg_240,realistic_synthetic,"Just a note, the new mandatory security module is out and requires completion by Friday.",informational,True,train
+msg_108,synthetic,Please send over the final spreadsheet for the budget review by close of business tomorrow.,important,True,train
+msg_211,adapted_real_world,Could you send me the hex codes for the new brand colors?,routine,True,train
+msg_083,adapted_real_world,Security needs confirmation of the visitor list before noon or reception will not issue passes.,urgent,True,train
+msg_132,adapted_real_world,Can you share the updated contact list with reception for next week's visitors?,routine,True,train
+msg_062,adapted_real_world,New expense policy changes take effect from 1 April. Key differences are outlined in the attached summary.,important,False,train
+msg_053,adapted_real_world,Production deployment is blocked by a failing integration test. The release window closes in three hours and the fix needs review now.,urgent,True,train
+msg_019,synthetic,Please review and approve any outstanding leave requests from your direct reports. Two requests are pending your sign-off.,routine,True,train
+msg_221,synthetic,The elevators in the west wing will be out of service for maintenance between 10 AM and 2 PM.,informational,False,train
+msg_182,synthetic,The vendor contract is expiring next week. Let's schedule a meeting to discuss renewal terms.,important,True,train
+msg_111,synthetic,Your feedback is needed on the mockups before design starts the next round.,important,True,train
+msg_078,realistic_synthetic,Office lease renewal terms have been shared. Facilities committee members please review before next week's discussion.,important,True,train
+msg_040,synthetic,Employee satisfaction survey results have been published on the HR portal. Overall engagement scores are up 4% from last year.,informational,False,train
+msg_142,synthetic,Slides from today's knowledge-sharing session are now in the team folder.,informational,False,train
+msg_052,synthetic,Photos from last Friday's team lunch have been uploaded to the shared album. Nice turnout!,informational,False,train
+msg_218,synthetic,Can you help me set up the projector in room 3 for my presentation?,routine,True,train
+msg_039,realistic_synthetic,IT is requesting that everyone restart their laptops to apply the latest security patch. Please do so before end of day.,routine,True,train
+msg_034,synthetic,Cross-team collaboration proposal for the new analytics platform. Your input on the integration requirements section would be helpful by Thursday.,important,True,train
+msg_225,realistic_synthetic,The fire drill scheduled for today has been postponed to next week due to rain.,informational,False,train
+msg_162,realistic_synthetic,Site is returning 502 errors. Need an engineer to check the load balancer configuration right now.,urgent,True,train
+msg_189,realistic_synthetic,Action required: Complete your annual compliance training by the 15th to avoid network access suspension.,important,True,train
+msg_018,realistic_synthetic,Performance review self-assessments are due next week. Use the updated template on the HR portal and submit to your line manager.,important,True,train
+msg_069,realistic_synthetic,Budget approval is needed before the purchase order expires at 5pm today. Finance will cancel the requisition if unsigned.,urgent,True,train
+msg_184,adapted_real_world,Your performance review is scheduled for Monday. Please complete the self-assessment beforehand.,important,True,train
+msg_014,adapted_real_world,Team restructure proposal has been circulated. I would appreciate your candid feedback by Wednesday so we can finalise before the leadership offsite.,important,True,train
+msg_172,adapted_real_world,Warehouse roof is leaking onto the server racks. Maintenance needs to respond immediately.,urgent,True,train
+msg_036,realistic_synthetic,Parking garage levels B2 and B3 have reopened following resurfacing work. All spaces are available again.,informational,False,train
+msg_105,synthetic,Could you look over the test results when you have a moment today and let me know if anything stands out?,important,True,train
+msg_023,adapted_real_world,Catering preferences for next Wednesday's lunch meeting — please reply with any dietary requirements by Monday.,routine,True,train
+msg_185,synthetic,The client has requested some changes to the UX design. Can you take a look and estimate the effort?,important,True,train
+msg_048,realistic_synthetic,Updated org chart reflecting last month's changes is now available on the intranet. No action required.,informational,False,train
+msg_159,realistic_synthetic,"You can ignore the earlier duplicate calendar invite, the 2 pm one is correct.",informational,False,train
+msg_046,synthetic,Marketing campaign brief is ready for stakeholder review. Comments are open in the shared document until next Wednesday.,important,True,train
+msg_013,synthetic,Compliance audit response materials are due by close of business today. Legal needs the signed attestation forms returned to the shared folder.,urgent,True,train
+msg_147,realistic_synthetic,The new starter begins on Monday and will be sitting near the support team.,informational,False,train
+msg_017,adapted_real_world,"SSL certificate for the customer portal expires at midnight tonight. If the renewal is not applied, users will see browser security warnings from tomorrow.",urgent,True,train
+msg_125,synthetic,Could you reorder printer paper for the admin cupboard during your next supply check?,routine,True,train
+msg_057,realistic_synthetic,API rate limiting thresholds were exceeded this morning causing intermittent service degradation. The platform team is aware and monitoring.,urgent,False,train
+msg_097,synthetic,"Thanks for flagging the outage, IT is already handling it and no action is needed from your side right now.",urgent,False,train
+msg_089,adapted_real_world,We have a duplicate booking for the interview room in the next hour and need you to confirm which slot stays.,urgent,True,train
+msg_081,realistic_synthetic,The client has moved today's sign-off call to 3 pm and needs the revised deck before then.,urgent,True,train
+msg_235,adapted_real_world,A pair of glasses was found in conference room C. They are at the front desk.,informational,False,train
+msg_005,adapted_real_world,The client has moved the contract signing to this afternoon instead of next week. We need the revised pricing sheet reviewed and approved before 2pm.,urgent,True,train
+msg_165,realistic_synthetic,A major client just escalated a P0 bug blocking their launch today. Please prioritize this over everything.,urgent,True,train
+msg_239,synthetic,"While reading the latest policy updates, please ensure you electronically sign the acknowledgment form at the bottom.",informational,True,train
+msg_075,realistic_synthetic,Please archive old project folders that are no longer active. Instructions for the archive process are on the wiki.,routine,True,train
+msg_131,synthetic,Please reset the meeting room layout after the training session ends.,routine,True,train
+msg_152,adapted_real_world,Building reception will issue temporary badges while the card printer is serviced.,informational,False,train
+msg_203,synthetic,Please remember to clean out the office fridge by 4 PM on Friday.,routine,True,train
+msg_098,adapted_real_world,"The train strike notice means several attendees may miss the morning workshop, just keeping you aware.",urgent,False,train
+msg_082,synthetic,"Our payment gateway is failing on live orders, please check the logs as soon as you are online.",urgent,True,train
+msg_050,adapted_real_world,Onboarding checklist for our new starter next Monday has been updated. Hiring managers please review and confirm readiness.,important,True,train
+msg_194,synthetic,The staging environment will be refreshed tomorrow at 9 AM. Save any test data you need to keep.,important,True,train
+msg_061,synthetic,Could you please look at this when you have a moment? The client brief needs to go out today and I want to make sure the numbers are right.,urgent,True,train
+msg_228,realistic_synthetic,I have uploaded the recordings from the training sessions to the shared folder.,informational,False,train
+msg_094,synthetic,Your manager asked whether you can review the final wording before it goes out to customers this afternoon.,urgent,True,train
+msg_022,synthetic,Conference travel request needs to be submitted this week to qualify for the early bird rate. Approval form attached.,important,True,train
+msg_079,synthetic,Updated internal phone directory has been circulated. Please check your entry and let admin know of any corrections.,routine,True,train
+msg_231,realistic_synthetic,The cafeteria menu for this week has been updated and posted online.,informational,False,train
+msg_015,realistic_synthetic,Office supply order going in on Thursday. Please add anything you need to the shared list before then.,routine,True,train
+msg_096,realistic_synthetic,Monitoring shows disk space is nearly full on the reporting machine and scheduled jobs start in an hour.,urgent,True,train
+msg_021,realistic_synthetic,Data backup job failed overnight and needs a manual restart before the business day begins. Logs attached.,urgent,True,train
+msg_114,synthetic,"There is a request to extend your software licence, please approve or reject it this week.",important,True,train
+msg_007,synthetic,Could you add any agenda items for the monthly team meeting? Send them over by tomorrow morning so I can circulate the final agenda.,routine,True,train
+msg_006,realistic_synthetic,New project scope document is ready for sign-off. Please review the attached PDF and confirm your approval by Wednesday.,important,True,train
+msg_177,realistic_synthetic,The catering company cancelled for the 500-person event starting in two hours. We need a backup plan.,urgent,True,train
+msg_187,adapted_real_world,We are migrating to the new CRM next month. Please ensure all your leads are exported.,important,True,train
+msg_055,synthetic,Document templates on the intranet have been updated to reflect the new brand guidelines. Old versions have been archived.,routine,False,train
+msg_063,realistic_synthetic,Reminder to log your professional development hours for this quarter. The portal closes for submissions on Friday.,routine,True,train
+msg_060,realistic_synthetic,Wi-Fi network name is changing next week. You will need to reconnect your devices using the credentials in the attached guide.,informational,True,train
+msg_118,adapted_real_world,Your document passed the first review stage and is now with compliance.,important,False,train
+msg_011,adapted_real_world,"Your desk booking for next Monday in Building C, Floor 2 has been confirmed. No further action needed.",routine,False,train
+msg_174,realistic_synthetic,"VIP customer account locked. Unlock it manually from the backend, they are waiting on the phone.",urgent,True,train
+msg_148,synthetic,Minutes from the policy meeting have been uploaded for anyone who wants to read them.,informational,False,train
+msg_219,realistic_synthetic,The weekly sync notes have been uploaded to the wiki for your records.,routine,False,train
+msg_084,realistic_synthetic,The server certificate expires this afternoon and the renewal has not completed.,urgent,True,train
+msg_092,adapted_real_world,The courier is already on site for the contract pack but the signed copy is not at reception.,urgent,True,train
+msg_149,adapted_real_world,We received confirmation that the insurance renewal has been processed.,informational,False,train
+msg_091,synthetic,"Could you join the incident bridge now, the API errors are still climbing.",urgent,True,train
+msg_166,adapted_real_world,Fire alarm in building A. Evacuate immediately using the nearest stairs.,urgent,True,train
+msg_178,adapted_real_world,Your corporate credit card has suspected fraudulent charges. Call the fraud department immediately.,urgent,True,train
+msg_117,synthetic,Just letting you know the leadership meeting has been moved to Thursday at 10 am.,important,False,train
+msg_216,realistic_synthetic,Could you forward me the email receipt from the software subscription?,routine,True,train
+msg_145,synthetic,The system update completed overnight and all services are back to normal.,informational,False,train
+msg_139,realistic_synthetic,This is to let you know the standard maintenance window starts at 7 pm tonight.,routine,False,train
+msg_121,realistic_synthetic,Please upload your timesheet before 5 pm on Friday.,routine,True,train
+msg_163,adapted_real_world,Security breach detected on the main file server. Disconnect all affected instances and report status.,urgent,True,train
+msg_175,adapted_real_world,Active shooter drill starting now. Please follow local protocols.,urgent,True,train

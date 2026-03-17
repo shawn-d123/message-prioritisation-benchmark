@@ -1,11 +1,42 @@
 message_id,source,message_text,priority_label,action_required,split,predicted_priority_label,predicted_action_required,priority_correct,action_correct,error_type
-msg_031,realistic_synthetic,The vending machine on the ground floor is being replaced. It should be back in service by Wednesday.,informational,false,test,important,false,False,True,priority_only
-msg_019,realistic_synthetic,We need to resolve the discrepancy in last month's expense report before finance closes the books on Wednesday.,important,true,test,routine,false,False,False,priority_and_action
-msg_047,adapted_real_world,The API endpoint for the payments service is returning 503 errors. This is affecting live transactions.,urgent,true,test,urgent,false,True,False,action_only
-msg_007,adapted_real_world,The fire alarm test scheduled for Thursday has been postponed to the following week.,informational,false,test,informational,true,True,False,action_only
-msg_055,realistic_synthetic,We need someone to take minutes at the governance meeting on Thursday. Any volunteers?,routine,true,test,routine,false,True,False,action_only
-msg_006,synthetic,Payroll will be processed one day early this month due to the bank holiday.,informational,false,test,important,false,False,True,priority_only
-msg_015,synthetic,Team lunch is booked for next Friday at 12:30. Let me know of any dietary requirements.,routine,true,test,urgent,false,False,False,priority_and_action
-msg_016,realistic_synthetic,Just flagging that the shared drive migration completed successfully over the weekend. All files should be accessible.,informational,false,test,informational,true,True,False,action_only
-msg_064,synthetic,The training session on inclusive hiring practices is next Wednesday at 2pm. Registration is open on the HR portal.,routine,true,test,routine,false,True,False,action_only
-msg_035,synthetic,Could you chase the catering company? We still don't have confirmation for the event on the 20th and it's in five days.,important,true,test,routine,true,False,True,priority_only
+msg_103,adapted_real_world,Please complete the mandatory procurement form this week so the order can be raised.,important,true,test,routine,true,False,True,priority_only
+msg_183,realistic_synthetic,We need three more interviewers for the hiring event on Thursday. Please sign up if you have availability.,important,true,test,routine,true,False,True,priority_only
+msg_027,realistic_synthetic,Building access card renewals are due. Please visit reception with your current card at your convenience this week.,routine,true,test,important,true,False,True,priority_only
+msg_200,synthetic,The board has officially approved our budget for the next fiscal year. Details are attached for your reference.,important,false,test,routine,false,False,True,priority_only
+msg_116,realistic_synthetic,The office move plan is attached for review ahead of Monday's coordination call.,important,false,test,important,true,True,False,action_only
+msg_016,synthetic,Building maintenance is scheduled for this weekend. Access to floors 3 and 4 will be restricted from Saturday 8am to Sunday 6pm.,informational,false,test,routine,true,False,False,priority_and_action
+msg_164,synthetic,We missed the regulatory filing deadline by 10 minutes. Call legal and see if we can get a grace period.,urgent,true,test,important,false,False,False,priority_and_action
+msg_074,adapted_real_world,Vendor selection committee meeting has moved from Tuesday to Thursday at 10am. Same agenda and location.,important,true,test,routine,false,False,False,priority_and_action
+msg_024,realistic_synthetic,"Company newsletter, March edition, is now available on the intranet. This month features updates from the product and engineering teams.",informational,false,test,urgent,true,False,False,priority_and_action
+msg_160,synthetic,The agenda is attached in case you want to add discussion points before tomorrow's forum.,informational,true,test,important,false,False,False,priority_and_action
+msg_227,synthetic,Reminder: the office will be closed on Monday in observance of the public holiday.,informational,false,test,routine,false,False,True,priority_only
+msg_133,realistic_synthetic,A gentle reminder to label your archived folders using the new naming format.,routine,true,test,routine,false,True,False,action_only
+msg_068,adapted_real_world,Annual company report is now available for download from the investor relations page.,informational,false,test,urgent,false,False,True,priority_only
+msg_140,synthetic,The recurring check-in has been shortened to 15 minutes from next week.,routine,false,test,important,true,False,False,priority_and_action
+msg_180,realistic_synthetic,"Emergency incident 8821 has been resolved by the night shift. No action needed, but read the post-mortem.",urgent,false,test,informational,false,False,True,priority_only
+msg_119,realistic_synthetic,Please note that the external auditor will visit next week and may request files from your team.,important,false,test,important,true,True,False,action_only
+msg_009,realistic_synthetic,"Payment authorisation required for the outstanding supplier invoice. If this is not processed today, we will incur a late fee.",urgent,true,test,urgent,false,True,False,action_only
+msg_192,realistic_synthetic,We received some pushback from the committee on our proposal. Let's huddle this afternoon to revise it.,important,true,test,routine,false,False,False,priority_and_action
+msg_087,realistic_synthetic,Production reported that the label printer is down and dispatch is waiting on a fix.,urgent,true,test,routine,false,False,False,priority_and_action
+msg_088,synthetic,Please send the corrected attendee numbers before lunch because catering is placing the final order.,urgent,true,test,routine,true,False,True,priority_only
+msg_085,synthetic,"I cannot access the shared drive needed for this morning's submission, can someone restore my permissions?",urgent,true,test,routine,false,False,False,priority_and_action
+msg_104,realistic_synthetic,The supplier sent a revised quote and needs confirmation by end of day tomorrow.,important,true,test,urgent,true,False,True,priority_only
+msg_128,synthetic,Please confirm whether you want lunch included for the internal workshop.,routine,true,test,important,true,False,True,priority_only
+msg_224,synthetic,The quarterly newsletter has been published. You can find it on the company portal.,informational,false,test,routine,false,False,True,priority_only
+msg_090,realistic_synthetic,Your account lockout has stopped the overnight job from completing and the rerun window is this morning.,urgent,true,test,routine,false,False,False,priority_and_action
+msg_179,synthetic,"Critical security patch has been applied to all workstations. Please save your work, systems will force reboot in 5 minutes.",urgent,false,test,urgent,true,True,False,action_only
+msg_056,adapted_real_world,Charity 5K run next month — registration link below if you are interested. The company will match donations.,informational,true,test,routine,false,False,False,priority_and_action
+msg_137,synthetic,Just confirming that facilities will test the fire alarm at 4 pm today.,routine,false,test,urgent,true,False,False,priority_and_action
+msg_120,synthetic,Could you let us know by Friday whether you still need editing access to the archive folder?,important,true,test,urgent,true,False,True,priority_only
+msg_058,synthetic,Customer feedback summary from last month's NPS survey is attached. Scores remained steady across all segments.,important,false,test,routine,false,False,True,priority_only
+msg_156,realistic_synthetic,"No need to respond, this is just confirmation that your request has been closed.",informational,false,test,important,true,False,False,priority_and_action
+msg_155,adapted_real_world,Please be aware that tomorrow's networking event is now at full capacity.,informational,false,test,urgent,true,False,False,priority_and_action
+msg_032,adapted_real_world,Summary of key decisions from yesterday's all-hands meeting is attached for those who could not attend.,informational,false,test,routine,false,False,True,priority_only
+msg_093,realistic_synthetic,The data extract sent to the regulator contains the wrong date range and a corrected file is needed today.,urgent,true,test,urgent,false,True,False,action_only
+msg_222,realistic_synthetic,"Welcome to the team, David! He will be joining us as a Senior Developer starting today.",informational,false,test,urgent,false,False,True,priority_only
+msg_008,adapted_real_world,"Welcome to the team, Jordan! Everyone please join me in welcoming our new data analyst starting in the Manchester office.",informational,false,test,routine,true,False,False,priority_and_action
+msg_028,synthetic,New recycling stations have been placed on each floor. Signage explains what goes in each bin.,informational,false,test,informational,true,True,False,action_only
+msg_001,realistic_synthetic,Server monitoring alert: primary database node unresponsive since 06:42. Failover has not triggered automatically. Manual intervention required.,urgent,true,test,routine,false,False,False,priority_and_action
+msg_232,adapted_real_world,Just letting you know I am logging off a bit early today to pick up my kids.,informational,false,test,urgent,false,False,True,priority_only
+msg_099,realistic_synthetic,We have escalated the access issue to the vendor and will contact you once they respond.,urgent,false,test,important,true,False,False,priority_and_action
+msg_041,adapted_real_world,Board presentation needs a final review by noon. I have incorporated your earlier comments but need confirmation that section 3 is accurate.,urgent,true,test,important,true,False,True,priority_only
