@@ -1,9 +1,65 @@
 message_id,source,message_text,priority_label,action_required
-msg_001,synthetic,Please send the signed form by 5pm today.,urgent,true
-msg_002,synthetic,FYI the office will be closed next Monday.,informational,false
-msg_003,realistic_synthetic,Can you confirm your attendance by Friday?,important,true
-msg_004,synthetic,Reminder to bring your ID badge tomorrow.,routine,true
-msg_005,synthetic,Post the weekly report in the shared folder by end of day.,urgent,true
-msg_006,synthetic,Don't forget to submit your timesheet by Friday.,important,true
-msg_007,synthetic,"Reminder to collect your new ID badge from reception, every Monday.",routine,true
-msg_008,synthetic,There may be a delay in response due to high volume of requests.,informational,false
+msg_001,synthetic,The client presentation has been moved to 2pm today — please update your slides before then.,urgent,true
+msg_002,realistic_synthetic,"Hi team, just a reminder that timesheets are due by end of day Friday as usual.",routine,true
+msg_003,adapted_real_world,We've noticed unusual login activity on your account. Please reset your password immediately.,urgent,true
+msg_004,synthetic,The new coffee machine has been installed in the second-floor kitchen.,informational,false
+msg_005,realistic_synthetic,"Could you review the attached budget proposal when you get a chance? No rush, but ideally before next Wednesday.",important,true
+msg_006,synthetic,Payroll will be processed one day early this month due to the bank holiday.,informational,false
+msg_007,adapted_real_world,The fire alarm test scheduled for Thursday has been postponed to the following week.,informational,false
+msg_008,synthetic,"Hi, the printer on floor 3 is out of toner again. Could someone log a facilities request?",routine,true
+msg_009,realistic_synthetic,Please confirm your attendance for the quarterly review by replying to this email today.,urgent,true
+msg_010,adapted_real_world,Gentle reminder: your annual compliance training expires in 48 hours. Please complete it to avoid access restrictions.,important,true
+msg_011,synthetic,We're trialling a new project management tool next month — more details to follow.,informational,false
+msg_012,realistic_synthetic,The heating in Building B will be turned off briefly tomorrow morning for maintenance.,informational,false
+msg_013,synthetic,Could you send over the finalised invoice for the Henderson project? The client's payment terms start from receipt.,important,true
+msg_014,adapted_real_world,Apologies for the short notice — the supplier needs the signed purchase order returned by close of business today.,urgent,true
+msg_015,synthetic,Team lunch is booked for next Friday at 12:30. Let me know of any dietary requirements.,routine,true
+msg_016,realistic_synthetic,Just flagging that the shared drive migration completed successfully over the weekend. All files should be accessible.,informational,false
+msg_017,synthetic,"Hi, would you mind updating the contact list with the new starters' details when you have a moment?",routine,true
+msg_018,adapted_real_world,The board has approved the revised travel policy. You can find the updated version on the intranet.,informational,false
+msg_019,realistic_synthetic,We need to resolve the discrepancy in last month's expense report before finance closes the books on Wednesday.,important,true
+msg_020,synthetic,Your desk phone extension has been changed to 4417. No action needed on your end.,informational,false
+msg_021,adapted_real_world,Please be aware that the car park will be resurfaced next week. Alternative parking arrangements are detailed below.,informational,true
+msg_022,synthetic,The server is showing critical memory usage. Can someone from infrastructure take a look as soon as possible?,urgent,true
+msg_023,realistic_synthetic,"Hi all, attached is the agenda for Monday's team meeting. Feel free to suggest additions.",routine,true
+msg_024,synthetic,Would you be able to cover the reception desk between 1 and 2 tomorrow? Sarah is at an appointment.,routine,true
+msg_025,adapted_real_world,A delivery arrived for your department. It's been left in the loading bay and needs collecting before 4pm.,important,true
+msg_026,synthetic,Congratulations to the sales team on exceeding their Q3 target by 12%.,informational,false
+msg_027,realistic_synthetic,The Wi-Fi password for the guest network has been updated. New credentials are posted in each meeting room.,informational,false
+msg_028,synthetic,"Hi, the client just called — they haven't received the proposal we sent on Friday. Can you re-send it now?",urgent,true
+msg_029,adapted_real_world,Your probation review is scheduled for next Thursday at 10am. Please prepare a short summary of your first three months.,important,true
+msg_030,synthetic,Reminder: all holiday requests for December must be submitted by the end of this month.,routine,true
+msg_031,realistic_synthetic,The vending machine on the ground floor is being replaced. It should be back in service by Wednesday.,informational,false
+msg_032,adapted_real_world,We've been asked to provide an updated risk register to the auditors by Friday morning. Can you check sections 4 and 5?,important,true
+msg_033,synthetic,Please ensure your laptop is connected to the network tonight so the security patch can be applied overnight.,routine,true
+msg_034,realistic_synthetic,Just letting you know that the intern cohort starts on the 14th. Onboarding packs have already been prepared.,informational,false
+msg_035,synthetic,Could you chase the catering company? We still don't have confirmation for the event on the 20th and it's in five days.,important,true
+msg_036,adapted_real_world,The CEO will be visiting the office next Tuesday. Please keep common areas tidy.,routine,true
+msg_037,synthetic,A water leak has been reported in the ground-floor corridor. Facilities are on their way but please avoid that area.,urgent,true
+msg_038,realistic_synthetic,"Hi, the document you sent has tracked changes still visible. Could you accept all changes and resend a clean version?",routine,true
+msg_039,adapted_real_world,Thanks for sorting the workshop materials — everything looked great on the day.,informational,false
+msg_040,synthetic,Your building access card will stop working at midnight unless you complete the annual security declaration.,urgent,true
+msg_041,realistic_synthetic,"Hi, I noticed the project timeline doesn't account for the bank holiday. Worth adjusting before we share it externally.",important,true
+msg_042,synthetic,The charity bake sale raised £312 last week. Thanks to everyone who contributed.,informational,false
+msg_043,adapted_real_world,Heads up — two of the interview candidates for tomorrow have requested virtual links instead of attending in person.,important,true
+msg_044,synthetic,Please remember to lock your screens when stepping away from your desks.,routine,false
+msg_045,realistic_synthetic,The data protection team needs all departments to complete the updated DPIA form by end of next week.,important,true
+msg_046,synthetic,Our energy usage report for Q2 is now available on the sustainability page.,informational,false
+msg_047,adapted_real_world,The API endpoint for the payments service is returning 503 errors. This is affecting live transactions.,urgent,true
+msg_048,synthetic,Could you double-check that the meeting room bookings for next week don't overlap? There was a conflict last time.,routine,true
+msg_049,realistic_synthetic,Morning — the external consultant cancelled today's 11am session. We're trying to rebook for Thursday.,informational,true
+msg_050,adapted_real_world,Please send the signed NDA back to legal today. The partnership agreement cannot proceed without it.,urgent,true
+msg_051,synthetic,The team's shared calendar has been updated with all the April deadlines.,informational,false
+msg_052,realistic_synthetic,"Hi, a few of the test cases in the staging environment are failing after last night's deployment. Can you investigate before we push to production?",urgent,true
+msg_053,adapted_real_world,Friendly reminder to submit your peer feedback forms. They're helpful for the review cycle but not mandatory.,routine,false
+msg_054,synthetic,The office plants are being watered on Tuesdays now instead of Mondays.,informational,false
+msg_055,realistic_synthetic,We need someone to take minutes at the governance meeting on Thursday. Any volunteers?,routine,true
+msg_056,synthetic,"Hi, the insurance renewal documents need a second signatory. Could you review and countersign by tomorrow?",urgent,true
+msg_057,adapted_real_world,The recruitment agency has sent through five CVs for the analyst role. I've forwarded them to you for shortlisting.,important,true
+msg_058,synthetic,New recycling bins have been placed next to each printer station.,informational,false
+msg_059,realistic_synthetic,Can you update the client contact spreadsheet? A couple of the phone numbers are out of date.,routine,true
+msg_060,adapted_real_world,Please note that the staff survey results will be shared in next week's all-hands meeting.,informational,false
+msg_061,synthetic,The landlord has requested a response to the lease amendment by close of play tomorrow.,urgent,true
+msg_062,realistic_synthetic,"Hi, just wanted to flag that the quarterly health and safety walkthrough is due. Could you schedule it in?",important,true
+msg_063,adapted_real_world,We've updated the style guide for external communications. The changes are mostly minor formatting tweaks.,informational,false
+msg_064,synthetic,The training session on inclusive hiring practices is next Wednesday at 2pm. Registration is open on the HR portal.,routine,true

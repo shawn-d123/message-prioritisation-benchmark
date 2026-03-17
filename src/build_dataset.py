@@ -2,83 +2,40 @@ import pandas as pd
 from schemas import REQUIRED_DATASET_COLUMNS
 
 
-def buildDatasetRows():
-    # Create a list of dictionaries.
-    # Each dictionary represents one dataset row.
-    datasetRows = [
-        {
-            "message_id": "msg_001",
-            "source": "synthetic",
-            "message_text": "Please send the signed form by 5pm today.",
-            "priority_label": "urgent",
-            "action_required": "true"
-        },
-        {
-            "message_id": "msg_002",
-            "source": "synthetic",
-            "message_text": "FYI the office will be closed next Monday.",
-            "priority_label": "informational",
-            "action_required": "false"
-        },
-        {
-            "message_id": "msg_003",
-            "source": "realistic_synthetic",
-            "message_text": "Can you confirm your attendance by Friday?",
-            "priority_label": "important",
-            "action_required": "true"
-        },
-        {
-            "message_id": "msg_004",
-            "source": "synthetic",
-            "message_text": "Reminder to bring your ID badge tomorrow.",
-            "priority_label": "routine",
-            "action_required": "true"
-        },
-        {
-            "message_id": "msg_005",
-            "source": "synthetic",
-            "message_text": "Post the weekly report in the shared folder by end of day.",
-            "priority_label": "urgent",
-            "action_required": "true"
-        },
-        {
-            "message_id": "msg_006",
-            "source": "synthetic",
-            "message_text": "Don't forget to submit your timesheet by Friday.",
-            "priority_label": "important",
-            "action_required": "true"
-        },
-        {
-            "message_id": "msg_007",
-            "source": "synthetic",
-            "message_text": "Reminder to collect your new ID badge from reception every Monday.",
-            "priority_label": "routine",
-            "action_required": "true"
-        },
-        {
-            "message_id": "msg_008",
-            "source": "synthetic",
-            "message_text": "There may be a delay in response due to high volume of requests.",
-            "priority_label": "informational",
-            "action_required": "false"
-        }
-    ]
+def buildDataset(inputFilePath, outputFilePath):
+    # Load the raw dataset that was generated externally
+    dataFrame = pd.read_csv(inputFilePath)
 
-    return datasetRows
+    # Clean the column names in case there are accidental spaces
+    dataFrame.columns = [str(columnName).strip() for columnName in dataFrame.columns]
 
-
-def saveDataset(datasetRows, outputFilePath):
-    dataFrame = pd.DataFrame(datasetRows)
-
+    # Keep only the columns that belong in the benchmark schema
     dataFrame = dataFrame[REQUIRED_DATASET_COLUMNS]
 
+    # Clean text values so the dataset is more consistent
+    dataFrame["message_id"] = dataFrame["message_id"].astype(str).str.strip()
+    dataFrame["source"] = dataFrame["source"].astype(str).str.strip().str.lower()
+    dataFrame["message_text"] = dataFrame["message_text"].astype(str).str.strip()
+    dataFrame["priority_label"] = dataFrame["priority_label"].astype(str).str.strip().str.lower()
+    dataFrame["action_required"] = dataFrame["action_required"].astype(str).str.strip().str.lower()
+
+    # Save the cleaned dataset into the processed folder
     dataFrame.to_csv(outputFilePath, index=False)
+
+    return dataFrame
 
 
 if __name__ == "__main__":
+    inputFilePath = "data/raw/generated_dataset.csv"
     outputFilePath = "data/processed/priority_dataset.csv"
-    datasetRows = buildDatasetRows()
-    saveDataset(datasetRows, outputFilePath)
 
-    print(f"Dataset saved to {outputFilePath}")
-    print(f"Total rows: {len(datasetRows)}")
+    dataFrame = buildDataset(inputFilePath, outputFilePath)
+
+    print(f"Processed dataset saved to: {outputFilePath}")
+    print(f"Total rows: {len(dataFrame)}")
+
+    print("\nPriority label counts:")
+    print(dataFrame["priority_label"].value_counts())
+
+    print("\nAction required counts:")
+    print(dataFrame["action_required"].value_counts())
