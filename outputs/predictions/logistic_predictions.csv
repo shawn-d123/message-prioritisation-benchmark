@@ -1,0 +1,17 @@
+message_id,source,message_text,priority_label,action_required,split,predicted_priority_label,predicted_action_required
+msg_031,realistic_synthetic,The vending machine on the ground floor is being replaced. It should be back in service by Wednesday.,informational,False,test,informational,true
+msg_003,adapted_real_world,We've noticed unusual login activity on your account. Please reset your password immediately.,urgent,True,test,informational,true
+msg_019,realistic_synthetic,We need to resolve the discrepancy in last month's expense report before finance closes the books on Wednesday.,important,True,test,informational,true
+msg_047,adapted_real_world,The API endpoint for the payments service is returning 503 errors. This is affecting live transactions.,urgent,True,test,informational,true
+msg_007,adapted_real_world,The fire alarm test scheduled for Thursday has been postponed to the following week.,informational,False,test,informational,true
+msg_045,realistic_synthetic,The data protection team needs all departments to complete the updated DPIA form by end of next week.,important,True,test,informational,true
+msg_058,synthetic,New recycling bins have been placed next to each printer station.,informational,False,test,informational,true
+msg_014,adapted_real_world,Apologies for the short notice — the supplier needs the signed purchase order returned by close of business today.,urgent,True,test,informational,true
+msg_059,realistic_synthetic,Can you update the client contact spreadsheet? A couple of the phone numbers are out of date.,routine,True,test,informational,true
+msg_020,synthetic,Your desk phone extension has been changed to 4417. No action needed on your end.,informational,False,test,routine,true
+msg_055,realistic_synthetic,We need someone to take minutes at the governance meeting on Thursday. Any volunteers?,routine,True,test,informational,true
+msg_006,synthetic,Payroll will be processed one day early this month due to the bank holiday.,informational,False,test,informational,true
+msg_015,synthetic,Team lunch is booked for next Friday at 12:30. Let me know of any dietary requirements.,routine,True,test,informational,true
+msg_016,realistic_synthetic,Just flagging that the shared drive migration completed successfully over the weekend. All files should be accessible.,informational,False,test,informational,true
+msg_064,synthetic,The training session on inclusive hiring practices is next Wednesday at 2pm. Registration is open on the HR portal.,routine,True,test,informational,true
+msg_035,synthetic,Could you chase the catering company? We still don't have confirmation for the event on the 20th and it's in five days.,important,True,test,informational,true
