@@ -6,6 +6,10 @@ from schemas import (
     REQUIRED_DATASET_COLUMNS
 )
 
+def normaliseTextValue(value):
+    if pd.isna(value):
+        return ""
+    return str(value).strip().lower()
 
 def validateDataset(datasetFilePath):
     validationErrors = [] # stores error messages found during validation
@@ -22,19 +26,28 @@ def validateDataset(datasetFilePath):
         return validationErrors
 
     # Check 2: priority_label values are valid
-    for priorityLabel in dataFrame["priority_label"]:
-        if priorityLabel not in ALLOWED_PRIORITY_LABELS:
-            validationErrors.append(f"Invalid priority label found: {priorityLabel}")
+    for rowNumber, priorityLabel in enumerate(dataFrame["priority_label"], start=1):
+        cleanedPriorityLabel = normaliseTextValue(priorityLabel)
+        if cleanedPriorityLabel not in ALLOWED_PRIORITY_LABELS:
+            validationErrors.append(
+                f"Invalid priority label found in row {rowNumber}: {priorityLabel}"
+            )
 
     # Check 3: source values are valid
-    for sourceValue in dataFrame["source"]:
-        if sourceValue not in ALLOWED_SOURCE_LABELS:
-            validationErrors.append(f"Invalid source value found: {sourceValue}")
+    for rowNumber, sourceValue in enumerate(dataFrame["source"], start=1):
+        cleanedSourceValue = normaliseTextValue(sourceValue)
+        if cleanedSourceValue not in ALLOWED_SOURCE_LABELS:
+            validationErrors.append(
+                f"Invalid source value found in row {rowNumber}: {sourceValue}"
+            )
 
     # Check 4: action_required values are valid
-    for actionValue in dataFrame["action_required"]:
-        if actionValue not in ALLOWED_ACTION_REQUIRED_VALUES:
-            validationErrors.append(f"Invalid action_required value found: {actionValue}")
+    for rowNumber, actionValue in enumerate(dataFrame["action_required"], start=1):
+        cleanedActionValue = normaliseTextValue(actionValue)
+        if cleanedActionValue not in ALLOWED_ACTION_REQUIRED_VALUES:
+            validationErrors.append(
+                f"Invalid action_required value found in row {rowNumber}: {actionValue}"
+            )
 
     # Check 5: duplicate message IDs
     duplicateIds = dataFrame[dataFrame["message_id"].duplicated()]["message_id"].tolist()

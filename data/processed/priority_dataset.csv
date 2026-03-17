@@ -2,3 +2,8 @@ message_id,source,message_text,priority_label,action_required
 msg_001,synthetic,Please send the signed form by 5pm today.,urgent,true
 msg_002,synthetic,FYI the office will be closed next Monday.,informational,false
 msg_003,realistic_synthetic,Can you confirm your attendance by Friday?,important,true
+msg_004,synthetic,Reminder to bring your ID badge tomorrow.,routine,true
+msg_005,synthetic,Post the weekly report in the shared folder by end of day.,urgent,true
+msg_006,synthetic,Don't forget to submit your timesheet by Friday.,important,true
+msg_007,synthetic,"Reminder to collect your new ID badge from reception, every Monday.",routine,true
+msg_008,synthetic,There may be a delay in response due to high volume of requests.,informational,false
