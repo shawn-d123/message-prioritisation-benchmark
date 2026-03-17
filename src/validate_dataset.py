@@ -60,3 +60,4 @@ if __name__ == "__main__":
         print("Problems found:")
         for errorMessage in validationErrors:
             print(f"- {errorMessage}")
+
