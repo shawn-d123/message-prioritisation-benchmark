@@ -1,150 +1,192 @@
-This is a professional, structured version of your README. It uses clear hierarchy, visual elements, and concise language to highlight both your technical skills and your analytical process—which is key for a portfolio piece.
+<div align="center">
 
------
+# 📬 Message Prioritisation Benchmark
 
-# Message Prioritisation Benchmark
+**A lightweight NLP benchmark for classifying messages by priority and action requirement — comparing rule-based heuristics against classical ML.**
 
-A lightweight NLP benchmark for classifying short email-style messages by **operational priority** and **action requirement**. This project compares an interpretable **rule-based baseline** against classical **scikit-learn** models to determine the most effective triage strategy for high-volume inboxes.
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-NLP_Benchmark-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data_Processing-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualisation-11557C?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
------
+Not every message deserves the same attention. This benchmark tests whether lightweight NLP can support realistic message triage.
 
-## 📊 Interactive Visual Summary
+---
 
-The chart below visualizes the performance delta between the rule-based approach and machine learning models.
+[![Model Performance Comparison](https://public.flourish.studio/visualisation/28101508/thumbnail)](https://public.flourish.studio/visualisation/28101508/)
 
-[](https://www.google.com/search?q=%5Bhttps://public.flourish.studio/visualisation/28101508/%5D\(https://public.flourish.studio/visualisation/28101508/\))
+**[View interactive chart on Flourish](https://public.flourish.studio/visualisation/28101508/)**
 
-*Interactive version: [View the Flourish chart](https://public.flourish.studio/visualisation/28101508/)*
+---
 
------
+</div>
 
-## 🎯 Project Overview
+## About
 
-This project explores a common workplace bottleneck: **Message Triage**. Not every message requires the same response. This benchmark tests whether lightweight NLP can accurately categorize messages into two distinct dimensions:
+This project builds a complete NLP benchmark pipeline for classifying short email-style messages across two tasks: **4-class priority classification** (urgent, important, routine, informational) and **binary action detection** (action required or not). Three approaches are compared on the same test set — a keyword-driven rule baseline, TF-IDF + Multinomial Naive Bayes, and TF-IDF + Logistic Regression.
 
-### 1\. Priority Classification
+The project was built to explore a practical workflow problem and to demonstrate end-to-end benchmark design: dataset curation, label taxonomy, train/test splitting, model training, evaluation, error analysis, and visualisation.
 
-  * `Urgent`: Immediate attention required.
-  * `Important`: High-value, but not time-critical.
-  * `Routine`: Standard operational tasks.
-  * `Informational`: No immediate response needed.
+<br>
 
-### 2\. Action Detection
+## Dataset
 
-  * `Action Required`: **True** or **False**.
+The final benchmark contains **240 labelled messages**, iteratively expanded and balanced after early experiments showed that a smaller dataset produced unstable results.
 
-### The Contenders
+| | |
+|:---|:---|
+| **Total rows** | 240 (60 per priority class) |
+| **Action split** | 160 true / 80 false |
+| **Train / test** | 180 / 60 (15 test examples per class) |
 
-I compared three distinct approaches:
+<br>
 
-  * **Rule-based Baseline:** Hand-crafted keyword patterns and heuristics.
-  * **TF-IDF + Multinomial Naive Bayes:** Probabilistic classifier focusing on word frequencies.
-  * **TF-IDF + Logistic Regression:** Linear model for high-dimensional text data.
+## Methods
 
------
+| Model | Approach | Notes |
+|:---|:---|:---|
+| **Rule baseline** | Keyword patterns for urgency, deadlines, review requests, informational cues | Interpretable and fast, but weaker at scale |
+| **Multinomial Naive Bayes** | TF-IDF features, unigrams + bigrams | Strongest overall on the final benchmark |
+| **Logistic Regression** | Same TF-IDF representation | Improved over the rule baseline, but did not beat Naive Bayes |
 
-## 🧠 Why I Built This
+<br>
 
-This project demonstrates an end-to-end data science workflow, specifically focusing on **decision support**. It highlights my ability to:
+## Results
 
-  * **Design NLP Benchmarks:** Designing taxonomies and label structures.
-  * **Curation:** Building and validating a custom dataset.
-  * **Comparative Analysis:** Moving beyond "black box" ML by testing against a transparent baseline.
-  * **Failure Analysis:** Identifying exactly where and why models struggle.
+### Overall comparison
 
------
+| Model | Priority Accuracy | Priority Macro F1 | Priority Weighted F1 | Action Required F1 |
+|:---|---:|---:|---:|---:|
+| Rule Baseline | 0.4333 | 0.4036 | 0.4036 | 0.6842 |
+| **Naive Bayes** | **0.5500** | **0.5407** | **0.5407** | **0.7835** |
+| Logistic Regression | 0.4833 | 0.4669 | 0.4669 | 0.7755 |
 
-## 📈 Dataset Evolution
+### Error summary
 
-A critical finding in this project was how **dataset maturity** impacts model selection.
+| Model | Total Errors | Priority Errors | Action Errors |
+|:---|---:|---:|---:|
+| Rule Baseline | 41 | 34 | 24 |
+| **Naive Bayes** | **36** | **27** | **21** |
+| Logistic Regression | 41 | 31 | 22 |
 
-| Phase | Size | Observation |
-| :--- | :--- | :--- |
-| **Initial** | Small/Unbalanced | Rule-based baseline outperformed ML; high instability. |
-| **Final** | **240 rows** | Balanced classes (60 each) allowed ML models to stabilize and surpass the baseline. |
+<br>
 
-### Final Composition
+## Key Findings
 
-  * **Total Rows:** 240
-  * **Distribution:** 60 per priority class (Urgent, Important, Routine, Informational).
-  * **Action Split:** 160 True / 80 False.
-  * **Split:** 75% Train (180) / 25% Test (60).
+**Dataset design changed the outcome.** On a smaller benchmark, the rule baseline appeared stronger. Once the dataset was expanded and balanced to 240 rows, classical ML clearly improved and Naive Bayes emerged as the best method. This was the single most important finding from the project.
 
------
+**Naive Bayes fit short text triage well.** The task relies on keyword patterns, short phrase signals, and compact message structure — a natural match for Multinomial Naive Bayes with TF-IDF features.
 
-## 🏆 Final Results
+**Action detection was easier than priority classification.** All models scored higher on binary action detection than on 4-class priority, suggesting that "needs action or not" is a simpler signal to learn.
 
-On the final balanced benchmark, **Multinomial Naive Bayes** emerged as the superior choice for short-text triage.
+**Interpretable baselines still matter.** The rule baseline was weaker overall but provided a transparent benchmark, showed where hand-written heuristics break down, and helped explain what the ML models were improving on.
 
-### Model Performance
+<br>
 
-| Model | Priority Accuracy | Priority Macro F1 | Action Required F1 |
-| :--- | :---: | :---: | :---: |
-| Rule Baseline | 0.4333 | 0.4036 | 0.6842 |
-| **Naive Bayes** | **0.5500** | **0.5407** | **0.7835** |
-| Logistic Regression | 0.4833 | 0.4669 | 0.7755 |
+## Pipeline
 
-### Key Takeaways
-
-1.  **ML Scales Better:** While rule-based methods are great for cold-starts, classical ML (specifically Naive Bayes) becomes significantly more reliable once a balanced dataset is available.
-2.  **Binary is Easier:** All models performed better at binary `action_required` detection than 4-class priority classification.
-3.  **Naive Bayes for Short Text:** The model's reliance on keyword signals makes it highly effective for the sparse features found in short email-style messages.
-
------
-
-## 🛠️ Project Structure & Workflow
-
-The project is modularized into a pipeline for reproducibility:
-
-```text
-├── data/               # Raw and processed CSVs
-├── outputs/            # Predictions, metrics, and matplotlib charts
-├── src/
-│   ├── build_dataset.py       # Standardizes raw data
-│   ├── validate_dataset.py    # Schema and integrity checks
-│   ├── split_dataset.py       # Reproducible stratified splitting
-│   ├── rule_priority_baseline.py # Keyword-based logic
-│   ├── train_models.py        # scikit-learn training pipeline
-│   ├── evaluate_models.py     # Accuracy/F1 calculation
-│   ├── analyse_errors.py      # Confusion matrix & failure rows
-│   └── generate_visualisations.py # Chart generation
-└── requirements.txt
+```
+1. build_dataset.py         → Load and standardise raw data
+2. validate_dataset.py      → Check schema, labels, duplicates, empty text
+3. split_dataset.py         → Stratified train/test split
+4. rule_priority_baseline.py → Run keyword-based baseline
+5. train_models.py          → Train Naive Bayes and Logistic Regression
+6. evaluate_models.py       → Accuracy, macro F1, weighted F1, classification reports
+7. analyse_errors.py        → Error summaries, confusion pairs, failure rows
+8. generate_visualisations.py → Comparison charts
 ```
 
-### How to Run
+<br>
+
+## Project Structure
+
+```
+message-prioritisation-benchmark/
+├── data/
+│   ├── raw/
+│   └── processed/
+├── outputs/
+│   ├── predictions/
+│   ├── metrics/
+│   ├── analysis/
+│   └── charts/
+├── src/
+│   ├── build_dataset.py
+│   ├── schemas.py
+│   ├── validate_dataset.py
+│   ├── split_dataset.py
+│   ├── rule_priority_baseline.py
+│   ├── train_models.py
+│   ├── evaluate_models.py
+│   ├── analyse_errors.py
+│   └── generate_visualisations.py
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+<br>
+
+## Tech Stack
+
+| | |
+|:---|:---|
+| **Language** | Python |
+| **Data** | Pandas, CSV-based pipeline |
+| **ML** | scikit-learn (TF-IDF, Naive Bayes, Logistic Regression) |
+| **Visualisation** | Matplotlib, Flourish |
+
+<br>
+
+## How to Run
 
 ```bash
-# Execute the full pipeline in sequence
-python src/build_dataset.py && \
-python src/validate_dataset.py && \
-python src/split_dataset.py && \
-python src/rule_priority_baseline.py && \
-python src/train_models.py && \
-python src/evaluate_models.py && \
-python src/analyse_errors.py && \
+python src/build_dataset.py
+python src/validate_dataset.py
+python src/split_dataset.py
+python src/rule_priority_baseline.py
+python src/train_models.py
+python src/evaluate_models.py
+python src/analyse_errors.py
 python src/generate_visualisations.py
 ```
 
------
+<br>
 
-## 🚀 Future Roadmap
+## What I Practised
 
-  * **Real-world Integration:** Incorporating non-synthetic message sources.
-  * **Advanced Models:** Testing Support Vector Machines (SVM) and Cross-Validation.
-  * **LLM Comparison:** Testing local, lightweight LLM classifiers (e.g., Llama 3/Mistral) against these classical methods.
-  * **Confidence Scores:** Introducing a "Uncertain" flag for low-probability predictions.
+- Designing an NLP benchmark from scratch
+- Creating and validating a labelled dataset with balanced classes
+- Comparing rule-based and classical ML approaches fairly
+- Working with TF-IDF features and scikit-learn classifiers
+- Evaluating with accuracy and F1 (macro and weighted)
+- Investigating failures through structured error analysis
+- Iterating on dataset design to improve reliability
+- Communicating findings with tables, charts, and interactive visuals
 
------
+<br>
 
-## 👤 Author
+## Future Improvements
 
-**Shawn Santan D'Souza**
+| Area | Idea |
+|:---|:---|
+| Data | More real-world, non-synthetic message sources |
+| Coverage | Subtle edge cases and ambiguous messages |
+| Models | SVM, cross-validation, confidence scores |
+| Comparison | Lightweight local LLM classifier |
+| Interface | Simple dashboard or demo |
 
-  * **GitHub:** [shawn-d123](https://www.google.com/search?q=https://github.com/shawn-d123)
-  * **LinkedIn:** [Shawn D'Souza](https://www.google.com/search?q=https://www.linkedin.com/in/shawn-dsouza-code234)
+<br>
 
-*License: [MIT](https://www.google.com/search?q=LICENSE)*
+---
 
------
+<div align="center">
 
-**Would you like me to add a "Visualizations" section with placeholders for the `.png` files generated by your script?**
+**An end-to-end NLP benchmark demonstrating dataset design, classical ML evaluation, error analysis, and clear communication of findings.**
+
+MIT License
+
+[Shawn Santan D'Souza](https://github.com/shawn-d123) · [LinkedIn](https://www.linkedin.com/in/shawn-dsouza-code234)
+
+</div>
