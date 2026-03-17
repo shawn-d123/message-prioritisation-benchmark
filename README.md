@@ -84,6 +84,14 @@ The final benchmark contains **240 labelled messages**, iteratively expanded and
 
 <br>
 
+## Visual results
+
+[![Priority Macro F1 Comparison](outputs/charts/priority_macro_f1_comparison.png)](outputs/charts/priority_macro_f1_comparison.png)
+
+[![Action Required F1 Comparison](outputs/charts/action_required_f1_comparison.png)](outputs/charts/action_required_f1_comparison.png)
+
+[![Error Comparison](outputs/charts/error_comparison.png)](outputs/charts/error_comparison.png)
+
 ## Pipeline
 
 ```
