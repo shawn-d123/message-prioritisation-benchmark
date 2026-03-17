@@ -1,0 +1,4 @@
+message_id,source,message_text,priority_label,action_required
+msg_001,synthetic,Please send the signed form by 5pm today.,urgent,true
+msg_002,synthetic,FYI the office will be closed next Monday.,informational,false
+msg_003,realistic_synthetic,Can you confirm your attendance by Friday?,important,true
