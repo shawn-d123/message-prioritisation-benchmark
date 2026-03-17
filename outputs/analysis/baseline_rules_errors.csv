@@ -1,0 +1,11 @@
+message_id,source,message_text,priority_label,action_required,split,predicted_priority_label,predicted_action_required,priority_correct,action_correct,error_type
+msg_031,realistic_synthetic,The vending machine on the ground floor is being replaced. It should be back in service by Wednesday.,informational,false,test,important,false,False,True,priority_only
+msg_019,realistic_synthetic,We need to resolve the discrepancy in last month's expense report before finance closes the books on Wednesday.,important,true,test,routine,false,False,False,priority_and_action
+msg_047,adapted_real_world,The API endpoint for the payments service is returning 503 errors. This is affecting live transactions.,urgent,true,test,urgent,false,True,False,action_only
+msg_007,adapted_real_world,The fire alarm test scheduled for Thursday has been postponed to the following week.,informational,false,test,informational,true,True,False,action_only
+msg_055,realistic_synthetic,We need someone to take minutes at the governance meeting on Thursday. Any volunteers?,routine,true,test,routine,false,True,False,action_only
+msg_006,synthetic,Payroll will be processed one day early this month due to the bank holiday.,informational,false,test,important,false,False,True,priority_only
+msg_015,synthetic,Team lunch is booked for next Friday at 12:30. Let me know of any dietary requirements.,routine,true,test,urgent,false,False,False,priority_and_action
+msg_016,realistic_synthetic,Just flagging that the shared drive migration completed successfully over the weekend. All files should be accessible.,informational,false,test,informational,true,True,False,action_only
+msg_064,synthetic,The training session on inclusive hiring practices is next Wednesday at 2pm. Registration is open on the HR portal.,routine,true,test,routine,false,True,False,action_only
+msg_035,synthetic,Could you chase the catering company? We still don't have confirmation for the event on the 20th and it's in five days.,important,true,test,routine,true,False,True,priority_only
