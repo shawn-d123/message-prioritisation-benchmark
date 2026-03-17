@@ -2,7 +2,7 @@
 
 # 📬 Message Prioritisation Benchmark
 
-**A lightweight NLP benchmark for classifying messages by priority and action requirement — comparing rule-based heuristics against classical ML.**
+**A lightweight NLP benchmark for classifying messages by priority and action requirement, comparing rule-based heuristics against classical ML.**
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-NLP_Benchmark-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
